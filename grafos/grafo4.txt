@@ -1,0 +1,7 @@
+A B 14
+B C 9
+C D 22
+D E 13
+D F 99
+F B 64
+F A 2
