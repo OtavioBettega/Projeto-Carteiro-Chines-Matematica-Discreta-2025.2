@@ -1,5 +1,5 @@
 # -*- coding: utf-8 -*-
-# main.py — Interface principal para os Casos 1.1, 1.2 e 3
+# main.py — Interface principal para os Casos 1, 2 e 3
 # Autor: Otavio Bettega — 2025.2
 
 import networkx as nx
@@ -59,15 +59,15 @@ def main():
             print("Usando apenas estrutura não ponderada.")
         print("\nExecutando Caso 1.1 (não ponderado)...")
         tours, stats = chinese_postman_unweighted(G)
-        titulo = "Carteiro Chinês - Caso 1.1 (Não Ponderado)"
+        titulo = "Carteiro Chinês - Caso 1 (Não Ponderado)"
 
     elif escolha == "2":
         if not ponderado:
-            print("\nErro: Caso 1.2 exige um grafo ponderado.")
+            print("\nErro: Caso 2 exige um grafo ponderado.")
             return
-        print("\nExecutando Caso 1.2 (ponderado)...")
+        print("\nExecutando Caso 2 (ponderado)...")
         tours, stats = chinese_postman_weighted(G)
-        titulo = "Carteiro Chinês - Caso 1.2 (Ponderado)"
+        titulo = "Carteiro Chinês - Caso 2 (Ponderado)"
 
     elif escolha == "3":
         if not ponderado:
